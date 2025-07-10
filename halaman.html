@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semua halaman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="bg-white-200 text-blue-500">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-14 items-center">
+          <div class="flex items-center space-x-3">
+            <div class="flex items-center h-8">
+              <image
+                class="h-8 w-auto"
+                src="assets/MASTER LOGO UNILAM HORIZONTAL (FC).png"
+              />
+            </div>
+          </div>
+
+          <ul
+            class="hidden md:flex flex-1 justify-center space-x-6 font-medium text-sm"
+          >
+            <li>
+              <a href="index.html" class="hover:text-yellow-400">Beranda</a>
+            </li>
+            <li class="group relative cursor-pointer">
+              <button
+                class="flex items-center gap-1 hover:text-yellow-400 focus:outline-none"
+                aria-haspopup="true"
+              >
+                Profil
+                <svg
+                  class="w-3 h-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <ul
+                class="absolute hidden group-hover:block bg-white text-blue-900 rounded shadow-lg mt-1 py-1 min-w-[140px] z-20 ring-1 ring-black ring-opacity-5"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-50"
+                    >Sejarah</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-50"
+                    >Visi & Misi</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-50"
+                    >Struktur Organisasi</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="hover:text-yellow-400">Artikel</a></li>
+            <li class="group relative cursor-pointer">
+              <button
+                class="flex items-center gap-1 hover:text-yellow-400 focus:outline-none"
+                aria-haspopup="true"
+              >
+                Informasi
+                <svg
+                  class="w-3 h-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <ul
+                class="absolute hidden group-hover:block bg-white text-blue-900 rounded shadow-lg mt-1 py-1 min-w-[140px] z-20 ring-1 ring-black ring-opacity-5"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-50"
+                    >Pengumuman</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-50"
+                    >Agenda</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="hover:text-green-400">Fasilitas</a></li>
+            <li><a href="#" class="hover:text-yellow-400">Prestasi</a></li>
+          </ul>
+
+          <div class="hidden md:flex">
+            <a
+              href="#"
+              class="flex items-center gap-1 bg-white-400 hover:bg-green-400 text-blue-500 text-sm font-semibold px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-300"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              PPDB Online
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 mb-20">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-bold text-gray-900">Artikel & Berita</h2>
+        <a
+          href="index.html"
+          class="text-blue-600 font-semibold text-sm border border-blue-600 rounded-full px-4 py-1 hover:bg-blue-50 select-none"
+          >Kembali ke halaman Berada</a
+        >
+      </div>
+      <p class="text-center text-gray-500 text-xs mb-7 font-semibold">
+        Menyajikan Publikasi Artikel, Berita dan Informasi dari Uniiversitas
+        Latansa Mashiro
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Artikel 1 -->
+        <article
+          class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out animate-fade-in-up cursor-pointer"
+        >
+          <img
+            src="assets/DJI_0120.JPG"
+            alt="Kolaborasi Siswa Unilam"
+            class="w-full h-48 object-cover opacity-0 animate-fade-in-image"
+            onload="this.classList.remove('opacity-0')"
+            onerror="this.style.display='none'"
+          />
+          <div class="p-4">
+            <h3
+              class="font-semibold text-blue-900 mb-2 truncate animate-slide-up"
+            >
+              <a href="detail.html"
+                >Kolaborasi Siswa Unilam di Perpustakaan Pintar</a
+              >
+            </h3>
+            <p class="text-sm text-gray-600 line-clamp-3">
+              Siswa Unilam aktif berkolaborasi dalam kegiatan belajar di
+              perpustakaan pintar yang dilengkapi teknologi modern...
+            </p>
+          </div>
+        </article>
+
+        <!-- Artikel 2 -->
+        <article
+          class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out animate-fade-in-up cursor-pointer"
+        >
+          <img
+            src="assets/DJI_0137.jpg"
+            alt="Kegiatan Belajar Outdoor"
+            class="w-full h-48 object-cover opacity-0 animate-fade-in-image"
+            onload="this.classList.remove('opacity-0')"
+            onerror="this.style.display='none'"
+          />
+          <div class="p-4">
+            <h3
+              class="font-semibold text-blue-900 mb-2 truncate animate-slide-up"
+            >
+              <a href="detail1.html"
+                >Kegiatan Belajar Outdoor Universitas La Tansa Mashiro</a
+              >
+            </h3>
+            <p class="text-sm text-gray-600 line-clamp-3">
+              Metode pembelajaran luar ruangan mulai dipraktekkan untuk
+              meningkatkan kreativitas dan daya ingat siswa...
+            </p>
+          </div>
+        </article>
+
+        <!-- Artikel 3 -->
+        <article
+          class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out animate-fade-in-up cursor-pointer"
+        >
+          <img
+            src="assets/DJI_0093.JPG"
+            alt="Event Pameran Sekolah dan Industri"
+            class="w-full h-48 object-cover opacity-0 animate-fade-in-image"
+            onload="this.classList.remove('opacity-0')"
+            onerror="this.style.display='none'"
+          />
+          <div class="p-4">
+            <h3
+              class="font-semibold text-blue-900 mb-2 truncate animate-slide-up"
+            >
+              <a href="detail2.html"
+                >Event Pameran Sekolah dan Industri di Mall</a
+              >
+            </h3>
+            <p class="text-sm text-gray-600 line-clamp-3">
+              Universitas La Tansa Mashiro mengikuti pameran sekolah dan
+              industri yang diadakan di pusat perbelanjaan untuk menjaring
+              peluang kemitraan...
+            </p>
+          </div>
+        </article>
+
+        <!-- Artikel 4 -->
+        <article
+          class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out animate-fade-in-up cursor-pointer"
+        >
+          <img
+            src="assets/DJI_0100.JPG"
+            alt="Pembelajaran Interaktif"
+            class="w-full h-48 object-cover opacity-0 animate-fade-in-image"
+            onload="this.classList.remove('opacity-0')"
+            onerror="this.style.display='none'"
+          />
+          <div class="p-4">
+            <h3
+              class="font-semibold text-blue-900 mb-2 truncate animate-slide-up"
+            >
+              <a href="detail3.html"
+                >Pembelajaran Kreatif dan Interaktif di Perpustakaan</a
+              >
+            </h3>
+            <p class="text-sm text-gray-600 line-clamp-3">
+              Teknik pembelajaran interaktif diterapkan di perpustakaan Unilam
+              Nusantara untuk memicu minat baca dan diskusi siswa...
+            </p>
+          </div>
+        </article>
+
+        <!-- Artikel 5 -->
+        <article
+          class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out animate-fade-in-up cursor-pointer"
+        >
+          <img
+            src="assets/DJI_0120.JPG"
+            alt="Kolaborasi Siswa Unilam"
+            class="w-full h-48 object-cover opacity-0 animate-fade-in-image"
+            onload="this.classList.remove('opacity-0')"
+            onerror="this.style.display='none'"
+          />
+          <div class="p-4">
+            <h3
+              class="font-semibold text-blue-900 mb-2 truncate animate-slide-up"
+            >
+              <a href="detail.html"
+                >Kolaborasi Siswa Unilam di Perpustakaan Pintar</a
+              >
+            </h3>
+            <p class="text-sm text-gray-600 line-clamp-3">
+              Siswa Unilam aktif berkolaborasi dalam kegiatan belajar di
+              perpustakaan pintar yang dilengkapi teknologi modern...
+            </p>
+          </div>
+        </article>
+
+        <!-- Artikel 6 -->
+        <article
+          class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out animate-fade-in-up cursor-pointer"
+        >
+          <img
+            src="assets/DJI_0137.jpg"
+            alt="Kegiatan Belajar Outdoor"
+            class="w-full h-48 object-cover opacity-0 animate-fade-in-image"
+            onload="this.classList.remove('opacity-0')"
+            onerror="this.style.display='none'"
+          />
+          <div class="p-4">
+            <h3
+              class="font-semibold text-blue-900 mb-2 truncate animate-slide-up"
+            >
+              <a href="detail1.html"
+                >Kegiatan Belajar Outdoor Universitas La Tansa Mashiro</a
+              >
+            </h3>
+            <p class="text-sm text-gray-600 line-clamp-3">
+              Metode pembelajaran luar ruangan mulai dipraktekkan untuk
+              meningkatkan kreativitas dan daya ingat siswa...
+            </p>
+          </div>
+        </article>
+
+        <!-- Artikel 7 -->
+        <article
+          class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out animate-fade-in-up cursor-pointer"
+        >
+          <img
+            src="assets/DJI_0093.JPG"
+            alt="Event Pameran Sekolah dan Industri"
+            class="w-full h-48 object-cover opacity-0 animate-fade-in-image"
+            onload="this.classList.remove('opacity-0')"
+            onerror="this.style.display='none'"
+          />
+          <div class="p-4">
+            <h3
+              class="font-semibold text-blue-900 mb-2 truncate animate-slide-up"
+            >
+              <a href="detail2.html"
+                >Event Pameran Sekolah dan Industri di Mall</a
+              >
+            </h3>
+            <p class="text-sm text-gray-600 line-clamp-3">
+              Universitas La Tansa Mashiro mengikuti pameran sekolah dan
+              industri yang diadakan di pusat perbelanjaan untuk menjaring
+              peluang kemitraan...
+            </p>
+          </div>
+        </article>
+
+        <!-- Artikel 8 -->
+        <article
+          class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out animate-fade-in-up cursor-pointer"
+        >
+          <img
+            src="assets/DJI_0100.JPG"
+            alt="Pembelajaran Interaktif"
+            class="w-full h-48 object-cover opacity-0 animate-fade-in-image"
+            onload="this.classList.remove('opacity-0')"
+            onerror="this.style.display='none'"
+          />
+          <div class="p-4">
+            <h3
+              class="font-semibold text-blue-900 mb-2 truncate animate-slide-up"
+            >
+              <a href="detail3.html"
+                >Pembelajaran Kreatif dan Interaktif di Perpustakaan</a
+              >
+            </h3>
+            <p class="text-sm text-gray-600 line-clamp-3">
+              Teknik pembelajaran interaktif diterapkan di perpustakaan Unilam
+              Nusantara untuk memicu minat baca dan diskusi siswa...
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="text-center text-sm text-gray-500 mt-12 py-6 border-t">
+      &copy; 2025 Universitas La Tansa Mashiro. All rights reserved.
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Toggle Profil Dropdown
+        const profilBtn = document.getElementById("profil-dropdown-button");
+        const profilMenu = document.getElementById("profil-dropdown-menu");
+        profilBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          profilMenu.classList.toggle("hidden");
+        });
+
+        // Toggle Informasi Dropdown
+        const infoBtn = document.getElementById("informasi-dropdown-button");
+        const infoMenu = document.getElementById("informasi-dropdown-menu");
+        infoBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          infoMenu.classList.toggle("hidden");
+        });
+
+        // Close dropdowns if clicked outside
+        document.addEventListener("click", (e) => {
+          if (!profilBtn.contains(e.target)) profilMenu.classList.add("hidden");
+          if (!infoBtn.contains(e.target)) infoMenu.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>

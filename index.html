@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Unilam - Universitas La'tansa Mahiro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="style.css">
+  <body class="bg-gray-50 font-sans leading-relaxed text-gray-700">
+    <nav class="bg-white text-blue-500">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-14 items-center">
+          <div class="flex items-center space-x-3">
+            <div class="flex items-center h-8">
+              <img
+                class="h-8 w-auto"
+                src="assets/MASTER LOGO UNILAM HORIZONTAL (FC).png"
+              />
+            </div>
+          </div>
+
+          <ul
+            class="hidden md:flex flex-1 justify-center space-x-6 font-medium text-sm"
+          >
+            <li>
+              <a href="#" class="hover:text-green-400">Beranda</a>
+            </li>
+
+            <li class="relative cursor-pointer">
+              <button
+                type="button"
+                id="profil-dropdown-button"
+                class="flex items-center gap-1 hover:text-green-400 focus:outline-none"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Profil
+                <svg
+                  class="w-3 h-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <ul
+                id="profil-dropdown-menu"
+                class="absolute hidden bg-white text-blue-900 rounded shadow-lg mt-1 py-1 min-w-[140px] z-20 ring-1 ring-black ring-opacity-5"
+              >
+                <li>
+                  <a
+                    href="halaman.html"
+                    class="block px-4 py-2 hover:bg-blue-50"
+                    >Sejarah</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-50"
+                    >Visi & Misi</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-50"
+                    >Struktur Organisasi</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#" class="hover:text-green-400">Artikel</a></li>
+
+            <li class="relative cursor-pointer">
+              <button
+                id="informasi-dropdown-button"
+                class="flex items-center gap-1 hover:text-green-400 focus:outline-none"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Informasi
+                <svg
+                  class="w-3 h-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <ul
+                id="informasi-dropdown-menu"
+                class="absolute hidden bg-white text-blue-900 rounded shadow-lg mt-1 py-1 min-w-[140px] z-20 ring-1 ring-black ring-opacity-5"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-50"
+                    >Pengumuman</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-50"
+                    >Agenda</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#" class="hover:text-green-400">Fasilitas</a></li>
+            <li><a href="#" class="hover:text-green-400">Prestasi</a></li>
+          </ul>
+
+          <form
+            id="searchForm"
+            class="hidden md:flex items-center space-x-2 mr-4"
+          >
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Cari artikel..."
+              class="px-3 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button
+              type="submit"
+              class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-md text-sm"
+            >
+              Cari
+            </button>
+          </form>
+
+          <div class="hidden md:flex">
+            <a
+              href="#"
+              class="flex items-center gap-1 bg-white-400 hover:bg-green-400 text-blue-500 text-sm font-semibold px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              PPDB Online
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="w-full relative bg-gray-50">
+      <div class="relative h-64 md:h-80 overflow-hidden">
+        <img
+          src="assets/LTM_2918 copy.jpg"
+          alt="Bright modern classroom scene with students attentively watching an instructor presenting on a whiteboard in a spacious room with large windows"
+          class="w-full h-full object-cover object-center brightness-90"
+          onerror="this.style.display='none';"
+        />
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-10">
+        <div
+          class="bg-white rounded-lg p-6 shadow-lg flex flex-col md:flex-row md:space-x-6 gap-6 md:gap-0 text-blue-900"
+        >
+          <div class="md:flex-1 space-y-4">
+            <h2 class="text-xl font-bold">
+              Selamat Datang Di Universitas La'tansa Mahiro
+            </h2>
+            <p class="text-gray-600 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              fringilla tempus venenatis. Suspendisse vel pharetra libero.
+              Phasellus dignissim libero a nisi congue maximus. In at varius
+              lectus. Suspendisse ultrices velit...
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center text-blue-700 font-semibold text-sm hover:text-blue-900"
+              >Sambutan Kepala...
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ml-1 h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+
+            <div class="flex flex-col sm:flex-row sm:space-x-8 mt-4">
+              <div class="flex items-center space-x-3">
+                <img
+                  class="w-12 h-12 rounded-full object-cover"
+                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8abcb458-25a8-4985-a10a-8abc84ad00db.png"
+                  alt="Portrait of Prof.Dr.KH.Soleh, woman smiling wearing green hijab with background blurred"
+                  onerror="this.style.display='none'"
+                />
+                <div>
+                  <p class="font-semibold text-gray-900 text-sm sm:text-base">
+                    Prof.Dr.KH.Soleh, MM
+                  </p>
+                  <p class="text-gray-500 text-xs sm:text-sm">
+                    Rektor 1 Universitas Latansa Mahiro
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-3 mt-4 sm:mt-0">
+                <img
+                  class="w-12 h-12 rounded-full object-cover"
+                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/98ea9725-7e9a-49aa-902a-f619967a54b8.png"
+                  alt="Portrait of Prof.Dr.KH.Soleh, woman smiling wearing green hijab with background blurred"
+                  onerror="this.style.display='none'"
+                />
+                <div>
+                  <p class="font-semibold text-gray-900 text-sm sm:text-base">
+                    Dr.H.Dini Arifian, SE, MM
+                  </p>
+                  <p class="text-gray-500 text-xs sm:text-sm">
+                    Wakil Rektor 1 Universitas Latansa Mahiro
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="md:w-[320px] border-l border-blue-300 pl-6 flex flex-col justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-bold mb-3">
+                Data Kampus Universitas Latansa Mahiro
+              </h3>
+              <div
+                class="flex text-center text-gray-800 font-semibold mb-6 border-b border-blue-200 pb-4"
+              >
+                <div class="flex-1 border-r border-blue-200">
+                  <p class="text-2xl text-gray-900">50</p>
+                  <p
+                    class="text-xs uppercase tracking-widest text-gray-500 mt-1"
+                  >
+                    Dosen & Staff
+                  </p>
+                </div>
+                <div class="flex-1 border-r border-blue-200">
+                  <p class="text-2xl text-gray-900">4</p>
+                  <p
+                    class="text-xs uppercase tracking-widest text-gray-500 mt-1"
+                  >
+                    Prestasi
+                  </p>
+                </div>
+                <div class="flex-1 border-r border-blue-200">
+                  <p class="text-2xl text-gray-900">20</p>
+                  <p
+                    class="text-xs uppercase tracking-widest text-gray-500 mt-1"
+                  >
+                    Fasilitas
+                  </p>
+                </div>
+                <div class="flex-1">
+                  <p class="text-2xl text-gray-900">16</p>
+                  <p
+                    class="text-xs uppercase tracking-widest text-gray-500 mt-1"
+                  >
+                    Ekstrakurikuler
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="flex-1 py-2 px-4 rounded border border-blue-700 text-blue-700 text-center text-sm font-semibold hover:bg-blue-50 transition"
+                >Tentang Kami</a
+              ><a
+                href="#"
+                class="flex-1 py-2 px-4 rounded bg-blue-700 text-white text-center text-sm font-semibold hover:bg-blue-800 transition"
+                >Visi dan Misi</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 mb-20">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-bold text-gray-900">Artikel & Berita</h2>
+        <a
+          href="halaman.html"
+          class="text-blue-600 font-semibold text-sm border border-blue-600 rounded-full px-4 py-1 hover:bg-blue-50 select-none"
+          >Lihat Semua Artikel</a
+        >
+      </div>
+      <p class="text-center text-gray-900 text-xs mb-5 font-semibold">
+        Menyajikan Publikasi Artikel, Berita dan Informasi dari Universitas La
+        Tansa Mashiro
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Artikel 1 -->
+        <article
+          class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out animate-fade-in-up cursor-pointer"
+        >
+          <img
+            src="assets/DJI_0120.JPG"
+            alt="Kolaborasi Siswa Unilam"
+            class="w-full h-48 object-cover opacity-0 animate-fade-in-image"
+            onload="this.classList.remove('opacity-0')"
+            onerror="this.style.display='none'"
+          />
+          <div class="p-4">
+            <h3
+              class="font-semibold text-blue-900 mb-2 truncate animate-slide-up"
+            >
+              <a href="detail.html"
+                >Kolaborasi Siswa Unilam di Perpustakaan Pintar</a
+              >
+            </h3>
+            <p class="text-sm text-gray-600 line-clamp-3">
+              Siswa Unilam aktif berkolaborasi dalam kegiatan belajar di
+              perpustakaan pintar yang dilengkapi teknologi modern...
+            </p>
+          </div>
+        </article>
+
+        <!-- Artikel 2 -->
+        <article
+          class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out animate-fade-in-up cursor-pointer"
+        >
+          <img
+            src="assets/DJI_0137.jpg"
+            alt="Kegiatan Belajar Outdoor"
+            class="w-full h-48 object-cover opacity-0 animate-fade-in-image"
+            onload="this.classList.remove('opacity-0')"
+            onerror="this.style.display='none'"
+          />
+          <div class="p-4">
+            <h3
+              class="font-semibold text-blue-900 mb-2 truncate animate-slide-up"
+            >
+              <a href="detail1.html"
+                >Kegiatan Belajar Outdoor Universitas La Tansa Mashiro</a
+              >
+            </h3>
+            <p class="text-sm text-gray-600 line-clamp-3">
+              Metode pembelajaran luar ruangan mulai dipraktekkan untuk
+              meningkatkan kreativitas dan daya ingat siswa...
+            </p>
+          </div>
+        </article>
+
+        <!-- Artikel 3 -->
+        <article
+          class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out animate-fade-in-up cursor-pointer"
+        >
+          <img
+            src="assets/DJI_0093.JPG"
+            alt="Event Pameran Sekolah dan Industri"
+            class="w-full h-48 object-cover opacity-0 animate-fade-in-image"
+            onload="this.classList.remove('opacity-0')"
+            onerror="this.style.display='none'"
+          />
+          <div class="p-4">
+            <h3
+              class="font-semibold text-blue-900 mb-2 truncate animate-slide-up"
+            >
+              <a href="detail2.html"
+                >Event Pameran Sekolah dan Industri di Mall</a
+              >
+            </h3>
+            <p class="text-sm text-gray-600 line-clamp-3">
+              Universitas La Tansa Mashiro mengikuti pameran sekolah dan
+              industri yang diadakan di pusat perbelanjaan untuk menjaring
+              peluang kemitraan...
+            </p>
+          </div>
+        </article>
+
+        <!-- Artikel 4 -->
+        <article
+          class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out animate-fade-in-up cursor-pointer"
+        >
+          <img
+            src="assets/DJI_0100.JPG"
+            alt="Pembelajaran Interaktif"
+            class="w-full h-48 object-cover opacity-0 animate-fade-in-image"
+            onload="this.classList.remove('opacity-0')"
+            onerror="this.style.display='none'"
+          />
+          <div class="p-4">
+            <h3
+              class="font-semibold text-blue-900 mb-2 truncate animate-slide-up"
+            >
+              <a href="detail3.html"
+                >Pembelajaran Kreatif dan Interaktif di Perpustakaan</a
+              >
+            </h3>
+            <p class="text-sm text-gray-600 line-clamp-3">
+              Teknik pembelajaran interaktif diterapkan di perpustakaan Unilam
+              Nusantara untuk memicu minat baca dan diskusi siswa...
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pagination -->
+      <div class="mt-10 flex justify-center">
+        <div class="inline-flex space-x-1" aria-label="Pagination">
+          <a
+            href="#"
+            class="px-3 py-1 rounded-l-md border border-green-400 text-sm text-gray-500 hover:bg-green-400"
+            aria-label="Previous"
+            >&laquo;</a
+          >
+
+          <!-- Nomor Halaman -->
+          <a
+            href="detail.html"
+            class="px-3 py-1 border border-green-400 text-sm text-gray-500 hover:bg-green-400"
+            >1</a
+          >
+          <a
+            href="halaman.html"
+            class="px-3 py-1 border border-green-400 text-sm text-gray-500 hover:bg-green-400"
+            >2</a
+          >
+          <a
+            href="halaman.html"
+            class="px-3 py-1 border border-green-400 text-sm text-gray-500 hover:bg-green-400"
+            >3</a
+          >
+          <a
+            href="halaman.html"
+            class="px-3 py-1 border border-green-400 text-sm text-gray-500 hover:bg-green-400"
+            >4</a
+          >
+          <a
+            href="halaman.html"
+            class="px-3 py-1 border border-green-400 text-sm text-gray-500 hover:bg-green-400"
+            >5</a
+          >
+          <a
+            href="halaman.html"
+            class="px-3 py-1 border border-green-400 text-sm text-gray-500 hover:bg-green-400"
+            >6</a
+          >
+          <a
+            href="halaman.html"
+            class="px-3 py-1 border border-green-400 text-sm text-gray-500 hover:bg-green-400"
+            >7</a
+          >
+          <a
+            href="halaman.html"
+            class="px-3 py-1 border border-green-400 text-sm text-gray-500 hover:bg-green-400"
+            >8</a
+          >
+          <a
+            href="halaman.html"
+            class="px-3 py-1 border border-green-400 text-sm text-gray-500 hover:bg-green-400"
+            >9</a
+          >
+          <a
+            href="halaman.html"
+            class="px-3 py-1 border border-green-400 text-sm text-gray-500 hover:bg-green-400"
+            >10</a
+          >
+
+          <!-- Tombol Next -->
+          <a
+            href="halaman.html"
+            class="px-3 py-1 rounded-r-md border border-green-400 text-sm text-gray-500 hover:bg-green-400"
+            aria-label="Next"
+            >&raquo;</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+     <footer class="text-center text-sm text-gray-500 mt-12 py-6 border-t">
+      &copy; 2025 Universitas La Tansa Mashiro. All rights reserved.
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const profilBtn = document.getElementById("profil-dropdown-button");
+        const profilMenu = document.getElementById("profil-dropdown-menu");
+        profilBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          profilMenu.classList.toggle("hidden");
+        });
+        const infoBtn = document.getElementById("informasi-dropdown-button");
+        const infoMenu = document.getElementById("informasi-dropdown-menu");
+        infoBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          infoMenu.classList.toggle("hidden");
+        });
+        document.addEventListener("click", (e) => {
+          if (!profilBtn.contains(e.target)) profilMenu.classList.add("hidden");
+          if (!infoBtn.contains(e.target)) infoMenu.classList.add("hidden");
+        });
+        document
+          .getElementById("searchForm")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const keyword = document.getElementById("searchInput").value.trim();
+
+            if (keyword !== "") {
+              window.location.href = `halaman.html?keyword=${encodeURIComponent(
+                keyword
+              )}`;
+            }
+          });
+      });
+    </script>
+  </body>
+</html>
